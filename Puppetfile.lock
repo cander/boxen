@@ -29,9 +29,9 @@ GITHUBTARBALL
     homebrew (1.4.1)
 
 GITHUBTARBALL
-  remote: boxen/puppet-hub
+  remote: boxen/puppet-mysql
   specs:
-    hub (1.0.3)
+    mysql (1.1.5)
 
 GITHUBTARBALL
   remote: boxen/puppet-openssl
@@ -75,8 +75,8 @@ DEPENDENCIES
   gcc (= 2.0.1)
   git (= 1.2.5)
   homebrew (= 1.4.1)
-  hub (= 1.0.3)
   inifile (= 1.0.0)
+  mysql (= 1.1.5)
   openssl (= 1.0.0)
   repository (= 2.2.0)
   ruby (= 6.3.4)
