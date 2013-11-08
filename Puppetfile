@@ -23,10 +23,7 @@ github "dnsmasq",    "1.0.0"
 github "gcc",        "2.0.1"
 github "git",        "1.2.5"
 github "homebrew",   "1.4.1"
-# github "hub",        "1.0.3"
 github "inifile",    "1.0.0", :repo => "puppetlabs/puppetlabs-inifile"
-# github "nginx",      "1.4.2"
-# github "nodejs",     "3.2.9"
 github "openssl",    "1.0.0"
 github "repository", "2.2.0"
 github "ruby",       "6.3.4"
@@ -37,7 +34,9 @@ github "xquartz",    "1.1.0"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 
-# things I might want
-# redis, ctags, tmux, vim, solr, mysql
+# Project things
+github "mysql",     "1.1.5"
 
-github "mysql",    "1.1.5"
+# Personal things
+github "iterm2",    "1.0.3"
+github "tmux",      "1.0.2"
