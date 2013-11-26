@@ -17,5 +17,5 @@ class projects::xydo_biz {
 
   # I'd like to set the Redis version way back to what we're using in
   # production, but I don't think this module and its brew take a version number
-  # include redis
+  include redis
 }

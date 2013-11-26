@@ -36,6 +36,7 @@ github "xquartz",    "1.1.0"
 
 # Project things
 github "mysql",     "1.1.5"
+github "redis",     "0.3.0"     # redis 2.6.9 - not what we run in production
 
 # Personal things
 github "iterm2",    "1.0.3"
