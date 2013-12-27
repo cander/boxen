@@ -41,3 +41,4 @@ github "redis",     "0.3.0"     # redis 2.6.9 - not what we run in production
 # Personal things
 github "iterm2",    "1.0.3"
 github "tmux",      "1.0.2"
+github "wget",      "1.0.0"

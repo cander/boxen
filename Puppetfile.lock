@@ -69,6 +69,11 @@ GITHUBTARBALL
     tmux (1.0.2)
 
 GITHUBTARBALL
+  remote: boxen/puppet-wget
+  specs:
+    wget (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
     xquartz (1.1.0)
@@ -100,5 +105,6 @@ DEPENDENCIES
   stdlib (= 4.1.0)
   sudo (= 1.0.0)
   tmux (= 1.0.2)
+  wget (= 1.0.0)
   xquartz (= 1.1.0)
 
