@@ -5,8 +5,8 @@ class people::cander {
   include wget
   include ctags
 
-  #include vagrant
-  #include virtualbox
+  include vagrant
+  include virtualbox
 
   # move project from site.pp
   include projects::all
