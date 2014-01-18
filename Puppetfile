@@ -10,6 +10,9 @@ def github(name, version, options = nil)
   mod name, version, :github_tarball => options[:repo]
 end
 
+forge "http://forge.puppetlabs.com"
+mod "smarchive/archive"
+
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 

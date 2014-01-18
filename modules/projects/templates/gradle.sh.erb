@@ -1,0 +1,14 @@
+#!/bin/sh
+#
+# Invoke gradle with the $DYLD_LIBRARY_PATH set with the homebrew lib dir.
+# This allows java to load native libraries installed via homebrew.
+# Shamelessly jacked from
+#   https://github.com/boxen/puppet-java/blob/master/files/java.sh
+
+export DYLD_FALLBACK_LIBRARY_PATH="$BOXEN_HOME/homebrew/lib:$DYLD_FALLBACK_LIBRARY_PATH"
+
+if [ -x /usr/libexec/java_home ]; then
+  export JAVA_HOME=`/usr/libexec/java_home`
+fi
+
+exec <%= @nonpkgs %>/gradle-<%= @gradle_ver %>/bin/gradle "$@"
