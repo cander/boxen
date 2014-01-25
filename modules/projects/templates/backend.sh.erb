@@ -1,0 +1,11 @@
+# Configuration for programs installed via archives into <%= @nonpkgs %>
+# that have multiple executables in a bin directory.  So, rather than
+# creating wrappers for each program, just modify the PATH.
+
+export JAVA_HOME=`/usr/libexec/java_home`
+
+export GROOVY_HOME=<%= @nonpkgs %>/groovy-<%= @groovy_ver %>
+export PATH=$PATH:$GROOVY_HOME/bin
+
+export HADOOP_HOME=<%= @nonpkgs %>/<%= @hadoop_dir %>
+export PATH=$PATH:$HADOOP_HOME/bin
