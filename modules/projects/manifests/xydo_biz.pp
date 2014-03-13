@@ -8,12 +8,7 @@ class projects::xydo_biz {
   require ruby::1_9_3_p194
 
   include mysql
-  mysql::db { ['biz_development', 'biz_test']: }
-
-  # would it be appropriate to provision the DBs with a user?
-
-  # in theory, mysql::db { 'mydb': ensure => absent, } should remove a db,
-  # but it doesn't because the mysqladmin command is interactive.
+  # mysql::db
 
   # I'd like to set the Redis version way back to what we're using in
   # production, but I don't think this module and its brew take a version number
