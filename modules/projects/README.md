@@ -1,4 +1,22 @@
 # Project Manifests
+Project manifests live in `modules/projects/manifests/$project.pp`.
+
+## Our Projects
+We currently have projects defined for:
+
+* xydo_biz - included by default in `manifests/site.pp`
+* Gravit
+* Backend
+* all - all of the projects
+
+So far, we don't have any company-specified information in these Boxen project definitions.  It looks like you could have them check out repositories, set up databases, and more, but we're not doing that yet.
+
+Beware: when Boxen installs mysql and redis, it runs them on non-standard
+ports, so they don't conflict with any existing installs.  Therefore, you
+may need to update your YML files to use the environment variables that
+contain those port numbers.
+
+## New Projects
 
 Project manifests live in `modules/projects/manifests/$project.pp`. A
 simple project manifest example:

@@ -34,3 +34,5 @@ You can do that easily with:
 ```
 include projects::all
 ```
+However, that brings in a bunch of historic stuff from the news engine that
+you probably don't want.
